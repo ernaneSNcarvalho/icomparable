@@ -25,7 +25,6 @@ namespace InterfaceIcomparable.Entities
             if(!(obj is Employee))
             {
                 throw new ArgumentException("Comparing error: argument is not a accept");
-
             }
             Employee other = obj as Employee;
             return Name.CompareTo(other.Name);
